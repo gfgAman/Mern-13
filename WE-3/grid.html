@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=], initial-scale=1.0">
+    <title>Grid...</title>
+    <style>
+        .container {
+            display: grid;
+            width: 100%;
+            height: 70vh;
+            /* grid-template-areas: ". H H H SM"
+                "S C C C SM"
+                "S C C C SM"
+                "F F F F SM"
+            ; */
+
+            grid-template-columns: repeat(5,100px);
+        }
+
+        .header {
+            /* grid-area: H; */
+            background-color: green;
+          grid-row:1/3;
+            grid-column: 1/3;
+        }
+
+        .sidebar {
+            /* grid-area: S; */
+            background-color: yellow;
+            grid-row: 2/4;
+        }
+
+        .content {
+            /* grid-area: C; */
+            background-color: cyan;
+        }
+
+        .footer {
+            /* grid-area: F; */
+            background-color: red;
+        }
+
+        .submain {
+            /* grid-area: SM; */
+            background-color: orange;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header"></div>
+        <div class="content"></div>
+        <div class="sidebar"></div>
+        <div class="footer"></div>
+        <div class="submain"></div>
+    </div>
+
+</body>
+
+</html>
