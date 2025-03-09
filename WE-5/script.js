@@ -69,5 +69,3 @@
 // }
 // console.log(a);
 
-let a = 'nvkdnvj'
-var a = 10
