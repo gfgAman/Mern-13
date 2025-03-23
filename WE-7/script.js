@@ -77,7 +77,7 @@
 
 //es6=>spread and rest operators(...)
 
-function abc([a,b,...c]){
+function abc([a,b,...c,d]){
     console.log(a);
     console.log(b);
     console.log(c);
